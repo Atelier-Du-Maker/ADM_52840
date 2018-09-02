@@ -1,27 +1,399 @@
 EESchema Schematic File Version 4
+LIBS:HolyIoT-NRF52840-Breakout-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Title "Holy_IOT_NRF52840_BreakOut_Board"
+Date "2018-08-31"
+Rev "1.0"
+Comp "Mini World Lyon"
+Comment1 "Alexandre Perier-Muzet"
+Comment2 "Mickael Veleine"
+Comment3 "Aubrin Dodeller"
 Comment4 ""
 $EndDescr
 $Comp
-L MWL:HolyIOT_NRF52840 U?
-U 1 1 5B89C47A
-P 5500 3150
-F 0 "U?" H 5500 4165 50  0000 C CNN
-F 1 "HolyIOT_NRF52840" H 5500 4074 50  0000 C CNN
-F 2 "" H 5500 3150 50  0001 C CNN
-F 3 "" H 5500 3150 50  0001 C CNN
-	1    5500 3150
+L Connector:Conn_01x13_Male J1
+U 1 1 5B8BEF03
+P 3950 2650
+F 0 "J1" H 3350 2800 50  0000 C CNN
+F 1 "Conn_01x13_Male" H 3350 2650 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x13_P2.54mm_Vertical" H 3950 2650 50  0001 C CNN
+F 3 "~" H 3950 2650 50  0001 C CNN
+	1    3950 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x13_Male J4
+U 1 1 5B8BEFAD
+P 7600 2650
+F 0 "J4" H 7573 2673 50  0000 R CNN
+F 1 "Conn_01x13_Male" H 7573 2582 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x13_P2.54mm_Vertical" H 7600 2650 50  0001 C CNN
+F 3 "~" H 7600 2650 50  0001 C CNN
+	1    7600 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x09_Male J2
+U 1 1 5B8BF0D5
+P 3950 3750
+F 0 "J2" H 3500 3900 50  0000 C CNN
+F 1 "Conn_01x09_Male" H 3500 3750 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 3950 3750 50  0001 C CNN
+F 3 "~" H 3950 3750 50  0001 C CNN
+	1    3950 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x09_Male J5
+U 1 1 5B8BF16B
+P 7600 3750
+F 0 "J5" H 7573 3773 50  0000 R CNN
+F 1 "Conn_01x09_Male" H 7573 3682 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 7600 3750 50  0001 C CNN
+F 3 "~" H 7600 3750 50  0001 C CNN
+	1    7600 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x11_Male J3
+U 1 1 5B8BF522
+P 5700 4600
+F 0 "J3" V 5628 4577 50  0000 C CNN
+F 1 "Conn_01x11_Male" V 5537 4577 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x11_P2.54mm_Vertical" H 5700 4600 50  0001 C CNN
+F 3 "~" H 5700 4600 50  0001 C CNN
+	1    5700 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 4000 5500 4050
+Wire Wire Line
+	5500 4050 5200 4050
+Wire Wire Line
+	5200 4050 5200 4400
+Wire Wire Line
+	5550 4000 5550 4100
+Wire Wire Line
+	5550 4100 5300 4100
+Wire Wire Line
+	5300 4100 5300 4400
+Wire Wire Line
+	6000 4000 6200 4000
+Wire Wire Line
+	6200 4000 6200 4400
+Wire Wire Line
+	5950 4000 5950 4050
+Wire Wire Line
+	5950 4050 6100 4050
+Wire Wire Line
+	6100 4050 6100 4400
+Wire Wire Line
+	5900 4000 5900 4100
+Wire Wire Line
+	5900 4100 6000 4100
+Wire Wire Line
+	6000 4100 6000 4400
+Wire Wire Line
+	5850 4000 5850 4150
+Wire Wire Line
+	5850 4150 5900 4150
+Wire Wire Line
+	5900 4150 5900 4400
+Wire Wire Line
+	5800 4000 5800 4400
+Wire Wire Line
+	5400 4400 5400 4150
+Wire Wire Line
+	5400 4150 5600 4150
+Wire Wire Line
+	5600 4150 5600 4000
+Wire Wire Line
+	5500 4400 5500 4200
+Wire Wire Line
+	5500 4200 5650 4200
+Wire Wire Line
+	5650 4200 5650 4000
+Wire Wire Line
+	5700 4250 5600 4250
+Wire Wire Line
+	5600 4250 5600 4400
+Wire Wire Line
+	5700 4000 5700 4250
+Wire Wire Line
+	5750 4350 5700 4350
+Wire Wire Line
+	5700 4350 5700 4400
+Wire Wire Line
+	5750 4000 5750 4350
+Wire Wire Line
+	6550 3750 6600 3750
+Wire Wire Line
+	6600 3750 6600 4150
+Wire Wire Line
+	6600 4150 7400 4150
+Wire Wire Line
+	6550 3700 6650 3700
+Wire Wire Line
+	6650 3700 6650 4050
+Wire Wire Line
+	6650 4050 7400 4050
+Wire Wire Line
+	6550 3650 6700 3650
+Wire Wire Line
+	6700 3650 6700 3950
+Wire Wire Line
+	6700 3950 7400 3950
+Wire Wire Line
+	6550 3600 6750 3600
+Wire Wire Line
+	6750 3600 6750 3850
+Wire Wire Line
+	6750 3850 7400 3850
+Wire Wire Line
+	6550 3550 6800 3550
+Wire Wire Line
+	6800 3550 6800 3750
+Wire Wire Line
+	6800 3750 7400 3750
+Wire Wire Line
+	6550 3500 6850 3500
+Wire Wire Line
+	6850 3500 6850 3650
+Wire Wire Line
+	6850 3650 7400 3650
+Wire Wire Line
+	6550 3450 6900 3450
+Wire Wire Line
+	6900 3450 6900 3550
+Wire Wire Line
+	6900 3550 7400 3550
+Wire Wire Line
+	7400 3450 7000 3450
+Wire Wire Line
+	7000 3450 7000 3400
+Wire Wire Line
+	7000 3400 6550 3400
+Wire Wire Line
+	6550 3350 7400 3350
+Wire Wire Line
+	6550 3300 7300 3300
+Wire Wire Line
+	7300 3300 7300 3250
+Wire Wire Line
+	7300 3250 7400 3250
+Wire Wire Line
+	6550 3250 7250 3250
+Wire Wire Line
+	7250 3250 7250 3150
+Wire Wire Line
+	7250 3150 7400 3150
+Wire Wire Line
+	6550 3200 7200 3200
+Wire Wire Line
+	7200 3200 7200 3050
+Wire Wire Line
+	7200 3050 7400 3050
+Wire Wire Line
+	6550 3150 7150 3150
+Wire Wire Line
+	7150 3150 7150 2950
+Wire Wire Line
+	7150 2950 7400 2950
+Wire Wire Line
+	6550 3100 7100 3100
+Wire Wire Line
+	7100 3100 7100 2850
+Wire Wire Line
+	7100 2850 7400 2850
+Wire Wire Line
+	6550 3050 7050 3050
+Wire Wire Line
+	7050 3050 7050 2750
+Wire Wire Line
+	7050 2750 7400 2750
+Wire Wire Line
+	6550 3000 7000 3000
+Wire Wire Line
+	7000 3000 7000 2650
+Wire Wire Line
+	7000 2650 7400 2650
+Wire Wire Line
+	6550 2950 6950 2950
+Wire Wire Line
+	6950 2950 6950 2550
+Wire Wire Line
+	6950 2550 7400 2550
+Wire Wire Line
+	6550 2900 6900 2900
+Wire Wire Line
+	6900 2900 6900 2450
+Wire Wire Line
+	6900 2450 7400 2450
+Wire Wire Line
+	6550 2850 6850 2850
+Wire Wire Line
+	6850 2850 6850 2350
+Wire Wire Line
+	6850 2350 7400 2350
+Wire Wire Line
+	6550 2800 6800 2800
+Wire Wire Line
+	6800 2800 6800 2250
+Wire Wire Line
+	6800 2250 7400 2250
+Wire Wire Line
+	6550 2750 6750 2750
+Wire Wire Line
+	6750 2750 6750 2150
+Wire Wire Line
+	6750 2150 7400 2150
+Wire Wire Line
+	6550 2700 6650 2700
+Wire Wire Line
+	6650 2700 6650 2050
+Wire Wire Line
+	6650 2050 7400 2050
+Wire Wire Line
+	4950 3750 4850 3750
+Wire Wire Line
+	4850 3750 4850 4150
+Wire Wire Line
+	4850 4150 4150 4150
+Wire Wire Line
+	4950 3700 4800 3700
+Wire Wire Line
+	4800 3700 4800 4050
+Wire Wire Line
+	4800 4050 4150 4050
+Wire Wire Line
+	4950 3650 4750 3650
+Wire Wire Line
+	4750 3650 4750 3950
+Wire Wire Line
+	4750 3950 4150 3950
+Wire Wire Line
+	4950 3600 4700 3600
+Wire Wire Line
+	4700 3600 4700 3850
+Wire Wire Line
+	4700 3850 4150 3850
+Wire Wire Line
+	4950 3550 4650 3550
+Wire Wire Line
+	4650 3550 4650 3750
+Wire Wire Line
+	4650 3750 4150 3750
+Wire Wire Line
+	4950 3500 4600 3500
+Wire Wire Line
+	4600 3500 4600 3650
+Wire Wire Line
+	4600 3650 4150 3650
+Wire Wire Line
+	4950 3450 4550 3450
+Wire Wire Line
+	4550 3450 4550 3550
+Wire Wire Line
+	4550 3550 4150 3550
+Wire Wire Line
+	4950 3400 4450 3400
+Wire Wire Line
+	4450 3400 4450 3450
+Wire Wire Line
+	4450 3450 4150 3450
+Wire Wire Line
+	4950 3350 4150 3350
+Wire Wire Line
+	4950 3300 4250 3300
+Wire Wire Line
+	4250 3300 4250 3250
+Wire Wire Line
+	4250 3250 4150 3250
+Wire Wire Line
+	4950 3250 4300 3250
+Wire Wire Line
+	4300 3250 4300 3150
+Wire Wire Line
+	4300 3150 4150 3150
+Wire Wire Line
+	4950 3200 4350 3200
+Wire Wire Line
+	4350 3200 4350 3050
+Wire Wire Line
+	4350 3050 4150 3050
+Wire Wire Line
+	4950 3150 4400 3150
+Wire Wire Line
+	4400 3150 4400 2950
+Wire Wire Line
+	4400 2950 4150 2950
+Wire Wire Line
+	4950 3100 4450 3100
+Wire Wire Line
+	4450 3100 4450 2850
+Wire Wire Line
+	4450 2850 4150 2850
+Wire Wire Line
+	4950 3050 4500 3050
+Wire Wire Line
+	4500 3050 4500 2750
+Wire Wire Line
+	4500 2750 4150 2750
+Wire Wire Line
+	4950 3000 4550 3000
+Wire Wire Line
+	4550 3000 4550 2650
+Wire Wire Line
+	4550 2650 4150 2650
+Wire Wire Line
+	4950 2950 4600 2950
+Wire Wire Line
+	4600 2950 4600 2550
+Wire Wire Line
+	4600 2550 4150 2550
+Wire Wire Line
+	4950 2900 4650 2900
+Wire Wire Line
+	4650 2900 4650 2450
+Wire Wire Line
+	4650 2450 4150 2450
+Wire Wire Line
+	4950 2850 4700 2850
+Wire Wire Line
+	4700 2850 4700 2350
+Wire Wire Line
+	4700 2350 4150 2350
+Wire Wire Line
+	4950 2800 4750 2800
+Wire Wire Line
+	4750 2800 4750 2250
+Wire Wire Line
+	4750 2250 4150 2250
+Wire Wire Line
+	4950 2750 4800 2750
+Wire Wire Line
+	4800 2750 4800 2150
+Wire Wire Line
+	4800 2150 4150 2150
+Wire Wire Line
+	4950 2700 4850 2700
+Wire Wire Line
+	4850 2700 4850 2050
+Wire Wire Line
+	4850 2050 4150 2050
+$Comp
+L MWL:HolyIOT_NRF52840 U1
+U 1 1 5B9DD21A
+P 5750 3250
+F 0 "U1" H 5750 4265 50  0000 C CNN
+F 1 "HolyIOT_NRF52840" H 5750 4174 50  0000 C CNN
+F 2 "" H 5750 3250 50  0001 C CNN
+F 3 "" H 5750 3250 50  0001 C CNN
+	1    5750 3250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
