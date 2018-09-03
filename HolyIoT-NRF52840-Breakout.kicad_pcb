@@ -224,7 +224,7 @@
     (fp_text reference U1 (at 0 -7) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value HolyIOT_NRF52840_Module (at 0 12) (layer F.SilkS)
+    (fp_text value HolyIOT_NRF52840 (at 0 12) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 7 -16.5) (end 7 -13.8) (layer F.Fab) (width 0.15))

@@ -15,50 +15,6 @@ Comment3 "Aubrin Dodeller"
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Conn_01x13_Male J1
-U 1 1 5B8BEF03
-P 3950 2650
-F 0 "J1" H 3350 2800 50  0000 C CNN
-F 1 "Conn_01x13_Male" H 3350 2650 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x13_P2.54mm_Vertical" H 3950 2650 50  0001 C CNN
-F 3 "~" H 3950 2650 50  0001 C CNN
-	1    3950 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x13_Male J4
-U 1 1 5B8BEFAD
-P 7600 2650
-F 0 "J4" H 7573 2673 50  0000 R CNN
-F 1 "Conn_01x13_Male" H 7573 2582 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x13_P2.54mm_Vertical" H 7600 2650 50  0001 C CNN
-F 3 "~" H 7600 2650 50  0001 C CNN
-	1    7600 2650
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x09_Male J2
-U 1 1 5B8BF0D5
-P 3950 3750
-F 0 "J2" H 3500 3900 50  0000 C CNN
-F 1 "Conn_01x09_Male" H 3500 3750 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 3950 3750 50  0001 C CNN
-F 3 "~" H 3950 3750 50  0001 C CNN
-	1    3950 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x09_Male J5
-U 1 1 5B8BF16B
-P 7600 3750
-F 0 "J5" H 7573 3773 50  0000 R CNN
-F 1 "Conn_01x09_Male" H 7573 3682 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 7600 3750 50  0001 C CNN
-F 3 "~" H 7600 3750 50  0001 C CNN
-	1    7600 3750
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x11_Male J3
 U 1 1 5B8BF522
 P 5700 4600
@@ -452,4 +408,26 @@ Wire Wire Line
 Wire Wire Line
 	7850 3300 7850 3350
 Connection ~ 7300 3300
+$Comp
+L Connector:Conn_01x22_Male J1
+U 1 1 5B8F408A
+P 3950 3050
+F 0 "J1" H 3450 3700 50  0000 C CNN
+F 1 "Conn_01x22_Male" H 3450 3450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x22_P2.54mm_Vertical" H 3950 3050 50  0001 C CNN
+F 3 "~" H 3950 3050 50  0001 C CNN
+	1    3950 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x22_Male J2
+U 1 1 5B90F2A0
+P 7600 3050
+F 0 "J2" H 7150 2750 50  0000 C CNN
+F 1 "Conn_01x22_Male" H 7100 2950 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x22_P2.54mm_Vertical" H 7600 3050 50  0001 C CNN
+F 3 "~" H 7600 3050 50  0001 C CNN
+	1    7600 3050
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

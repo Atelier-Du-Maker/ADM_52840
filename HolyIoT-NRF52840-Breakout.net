@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/Anderson69s/Git/HolyIoT-NRF52840-Breakout-Board/HolyIoT-NRF52840-Breakout.sch)
-    (date "Dimanche 02 septembre 2018 à 19:44:55")
+    (date "Lundi 03 septembre 2018 à 19:33:53")
     (tool "Eeschema (5.0.0-3-g5ebb6b6)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
