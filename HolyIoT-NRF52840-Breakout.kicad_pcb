@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.0.0)")
+(kicad_pcb (version 20171130) (host pcbnew "(5.0.0-3-g5ebb6b6)")
 
   (general
     (thickness 1.6)
@@ -1798,10 +1798,10 @@
       (net 1 "Net-(J1-Pad2)") (solder_mask_margin 0.1) (solder_paste_margin -0.1) (clearance 0.1))
     (pad 1 smd rect (at -6.5 -13.2) (size 1 0.8) (layers F.Cu F.Paste F.Mask)
       (net 28 GND) (solder_mask_margin 0.1) (solder_paste_margin -0.1) (clearance 0.1))
-    (model ${KISYS3DMOD}/RF_Module.3dshapes/RN42.wrl
-      (at (xyz 0 0 0))
+    (model ${KIPRJMOD}/3Dmodels/Holyiot_18010.step
+      (offset (xyz 0.25 7.5 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
