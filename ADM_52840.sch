@@ -1,17 +1,16 @@
 EESchema Schematic File Version 4
-LIBS:HolyIoT-NRF52840-Breakout-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Holy_IOT_NRF52840_BreakOut_Board"
-Date "2018-08-31"
+Title "ADM_52840"
+Date "2020-10-31"
 Rev "1.0"
-Comp "Mini World Lyon"
+Comp "Atelier Du Maker"
 Comment1 "Alexandre Perier-Muzet"
 Comment2 "Mickael Veleine"
-Comment3 "Aubrin Dodeller"
+Comment3 "Gaetan Noël"
 Comment4 ""
 $EndDescr
 Wire Wire Line
@@ -249,12 +248,12 @@ Wire Wire Line
 Wire Wire Line
 	4850 2050 4700 2050
 $Comp
-L MWL:HolyIOT_NRF52840 U1
+L Legacy:HolyIOT_NRF52840 U1
 U 1 1 5B9DD21A
 P 5750 3250
 F 0 "U1" H 5750 4265 50  0000 C CNN
 F 1 "HolyIOT_NRF52840" H 5750 4174 50  0000 C CNN
-F 2 "MWL:HolyIOT-NRF52840-Module" H 5750 3250 50  0001 C CNN
+F 2 "LEGACY:HolyIOT-NRF52840-Module" H 5750 3250 50  0001 C CNN
 F 3 "" H 5750 3250 50  0001 C CNN
 	1    5750 3250
 	1    0    0    -1  
@@ -534,17 +533,6 @@ F 3 "" H 4850 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4850 4650 4850 4800
-$Comp
-L Serigraphie:LOGO G1
-U 1 1 5B9AE5DB
-P 5700 1500
-F 0 "G1" H 5700 1270 60  0001 C CNN
-F 1 "LOGO" H 5700 1730 60  0001 C CNN
-F 2 "MWL:Serigraphie" H 5700 1500 50  0001 C CNN
-F 3 "" H 5700 1500 50  0001 C CNN
-	1    5700 1500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5900 4000 5900 4200
 Wire Wire Line
