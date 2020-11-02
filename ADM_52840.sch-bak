@@ -121,9 +121,9 @@ F 3 "" H 3275 7325 50  0001 C CNN
 	1    3275 7325
 	1    0    0    -1  
 $EndComp
-Text GLabel 3625 7100 2    50   Input ~ 0
-SWDIO
 Text GLabel 3500 7300 2    50   Input ~ 0
+SWDIO
+Text GLabel 3625 7100 2    50   Input ~ 0
 SWDCLK
 Wire Wire Line
 	3525 7100 3625 7100

@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name ADM_52840-rescue)(type Legacy)(uri ${KIPRJMOD}/ADM_52840-rescue.lib)(options "")(descr ""))
+  (lib (name Logo)(type Legacy)(uri /Users/Anderson69s/Git/ADM_52840/adm.lib)(options "")(descr ""))
 )
