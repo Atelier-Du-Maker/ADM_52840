@@ -103,7 +103,7 @@ U 1 1 5BDD1794
 P 3325 6700
 F 0 "J5" V 3375 7117 50  0000 C CNN
 F 1 "JTAG" V 3525 7025 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 3325 6700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 3325 6700 50  0001 C CNN
 F 3 "~" H 3325 6700 50  0001 C CNN
 	1    3325 6700
 	0    1    1    0   
@@ -121,9 +121,9 @@ F 3 "" H 3275 7325 50  0001 C CNN
 	1    3275 7325
 	1    0    0    -1  
 $EndComp
-Text GLabel 3625 7100 2    50   Input ~ 0
-SWDIO
 Text GLabel 3500 7300 2    50   Input ~ 0
+SWDIO
+Text GLabel 3625 7100 2    50   Input ~ 0
 SWDCLK
 Wire Wire Line
 	3525 7100 3625 7100
@@ -920,12 +920,12 @@ Connection ~ 1825 7150
 Wire Wire Line
 	1825 7150 1825 7300
 $Comp
-L Connector:Conn_01x15_Male J3
+L Connector:Conn_01x16_Male J3
 U 1 1 5FA23DAD
 P 7650 2300
 F 0 "J3" H 7775 1450 50  0000 R CNN
-F 1 "Conn_01x15_Male" H 7975 1275 50  0001 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical" H 7650 2300 50  0001 C CNN
+F 1 "Conn_01x16_Male" H 7975 1275 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 7650 2300 50  0001 C CNN
 F 3 "~" H 7650 2300 50  0001 C CNN
 	1    7650 2300
 	-1   0    0    -1  
@@ -1015,28 +1015,16 @@ Wire Wire Line
 Wire Wire Line
 	6450 2300 6450 2275
 $Comp
-L Connector:Conn_01x18_Male J4
+L Connector:Conn_01x19_Male J4
 U 1 1 5FBCF5CF
 P 1750 4425
 F 0 "J4" V 1677 4353 50  0000 C CNN
 F 1 "Conn_01x19_Male" V 1586 4353 50  0001 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x18_P2.54mm_Vertical" H 1750 4425 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x19_P2.54mm_Vertical" H 1750 4425 50  0001 C CNN
 F 3 "~" H 1750 4425 50  0001 C CNN
 	1    1750 4425
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2550 3375 3525 3375
-Wire Wire Line
-	2450 3275 3525 3275
-Wire Wire Line
-	2350 3175 3525 3175
-Wire Wire Line
-	2250 3075 3525 3075
-Wire Wire Line
-	2150 2975 3525 2975
-Wire Wire Line
-	2050 2875 3525 2875
 Wire Wire Line
 	2475 1475 2475 1400
 Wire Wire Line
@@ -1052,73 +1040,29 @@ Wire Wire Line
 Wire Wire Line
 	550  1325 550  4025
 Wire Wire Line
-	1950 2775 1950 2975
-Wire Wire Line
-	1950 2775 3525 2775
-Wire Wire Line
-	1750 4225 1750 2975
-Wire Wire Line
-	1750 2975 1950 2975
-Wire Wire Line
-	1850 4225 1850 3075
-Wire Wire Line
-	1850 3075 2050 3075
-Wire Wire Line
-	2050 3075 2050 2875
-Wire Wire Line
-	1950 3150 2150 3150
-Wire Wire Line
-	1950 4225 1950 3150
-Wire Wire Line
-	2150 3150 2150 2975
-Wire Wire Line
-	2050 4225 2050 3250
-Wire Wire Line
-	2050 3250 2250 3250
-Wire Wire Line
-	2250 3250 2250 3075
-Wire Wire Line
-	2150 4225 2150 3325
-Wire Wire Line
-	2150 3325 2350 3325
-Wire Wire Line
-	2350 3325 2350 3175
-Wire Wire Line
-	2250 4225 2250 3425
-Wire Wire Line
-	2250 3425 2450 3425
-Wire Wire Line
-	2450 3425 2450 3275
-Wire Wire Line
-	2350 4225 2350 3550
-Wire Wire Line
-	2350 3550 2550 3550
-Wire Wire Line
-	2550 3550 2550 3375
-Wire Wire Line
 	4175 4550 3300 4550
 Wire Wire Line
-	3300 4550 3300 3650
+	3300 4550 3300 3500
 Wire Wire Line
-	3300 3650 2450 3650
+	3300 3500 2350 3500
 Wire Wire Line
-	2450 3650 2450 4225
+	2350 3500 2350 4225
 Wire Wire Line
 	4275 4675 3150 4675
 Wire Wire Line
-	3150 4675 3150 3750
+	3150 4675 3150 3600
 Wire Wire Line
-	3150 3750 2550 3750
+	3150 3600 2450 3600
 Wire Wire Line
-	2550 3750 2550 4225
+	2450 3600 2450 4225
 Wire Wire Line
 	4375 4800 3000 4800
 Wire Wire Line
-	3000 4800 3000 3850
+	3000 4800 3000 3700
 Wire Wire Line
-	3000 3850 2650 3850
+	3000 3700 2550 3700
 Wire Wire Line
-	2650 3850 2650 4225
+	2550 3700 2550 4225
 $Comp
 L Device:R R7
 U 1 1 600A9D2C
@@ -1178,17 +1122,17 @@ Wire Wire Line
 	1975 2300 1975 2475
 Connection ~ 1975 2475
 Wire Wire Line
-	3525 2675 1650 2675
+	3525 2675 1550 2675
 Wire Wire Line
-	1650 2675 1650 4225
+	1550 2675 1550 4225
 Wire Wire Line
 	3525 2575 2525 2575
 Wire Wire Line
 	2525 2575 2525 2625
 Wire Wire Line
-	2525 2625 1550 2625
+	2525 2625 1450 2625
 Wire Wire Line
-	1550 2625 1550 4225
+	1450 2625 1450 4225
 Wire Wire Line
 	925  1875 925  2750
 Wire Wire Line
@@ -1196,35 +1140,35 @@ Wire Wire Line
 Wire Wire Line
 	875  1775 3525 1775
 Wire Wire Line
-	1050 3975 1050 4225
+	950  3975 950  4225
 Wire Wire Line
-	625  3975 1050 3975
+	625  3975 950  3975
 Wire Wire Line
-	950  4225 950  4025
+	850  4225 850  4025
 Wire Wire Line
-	550  4025 950  4025
+	550  4025 850  4025
 Wire Wire Line
-	700  3875 1150 3875
+	700  3875 1050 3875
 Wire Wire Line
-	1150 3875 1150 4225
+	1050 3875 1050 4225
 Wire Wire Line
 	700  1575 700  3875
 Wire Wire Line
-	775  3775 1250 3775
+	775  3775 1150 3775
 Wire Wire Line
-	1250 3775 1250 4225
+	1150 3775 1150 4225
 Wire Wire Line
 	775  1675 775  3775
 Wire Wire Line
 	875  1775 875  3675
 Wire Wire Line
-	875  3675 1350 3675
+	875  3675 1250 3675
 Wire Wire Line
-	1350 3675 1350 4225
+	1250 3675 1250 4225
 Wire Wire Line
-	1450 2750 1450 4225
+	1350 2750 1350 4225
 Wire Wire Line
-	925  2750 1450 2750
+	925  2750 1350 2750
 Wire Wire Line
 	7375 3375 7375 3000
 Wire Wire Line
@@ -1239,4 +1183,57 @@ Wire Wire Line
 	1900 2075 3525 2075
 Wire Wire Line
 	1600 2075 1500 2075
+Wire Wire Line
+	7450 3100 7425 3100
+Wire Wire Line
+	7425 3100 7425 3525
+Wire Wire Line
+	7425 3525 7025 3525
+Text GLabel 7025 3525 0    50   Input ~ 0
+V_NRF
+Wire Wire Line
+	1650 2775 3525 2775
+Wire Wire Line
+	1650 2775 1650 4225
+Wire Wire Line
+	1750 2875 3525 2875
+Wire Wire Line
+	1750 2875 1750 4225
+Wire Wire Line
+	1850 2975 3525 2975
+Wire Wire Line
+	1850 2975 1850 4225
+Wire Wire Line
+	1950 3075 3525 3075
+Wire Wire Line
+	1950 3075 1950 4225
+Wire Wire Line
+	2050 3175 3525 3175
+Wire Wire Line
+	2050 3175 2050 4225
+Wire Wire Line
+	2150 3275 3525 3275
+Wire Wire Line
+	2150 3275 2150 4225
+Wire Wire Line
+	2250 3375 3525 3375
+Wire Wire Line
+	2250 3375 2250 4225
+Wire Wire Line
+	2650 4225 2650 3900
+Wire Wire Line
+	2650 3900 2825 3900
+Wire Wire Line
+	2825 3900 2825 4275
+$Comp
+L power:GND #PWR0104
+U 1 1 5FE7406E
+P 2825 4275
+F 0 "#PWR0104" H 2825 4025 50  0001 C CNN
+F 1 "GND" H 2830 4102 50  0000 C CNN
+F 2 "" H 2825 4275 50  0001 C CNN
+F 3 "" H 2825 4275 50  0001 C CNN
+	1    2825 4275
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
