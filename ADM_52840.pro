@@ -1,4 +1,4 @@
-update=2020 November 01, Sunday 09:30:58
+update=2020 November 02, Monday 06:15:03
 version=1
 last_client=kicad
 [general]
@@ -33,7 +33,7 @@ AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
 MinTrackWidth=0.2
-MinViaDiameter=0.4
+MinViaDiameter=0.3
 MinViaDrill=0.3
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
@@ -67,7 +67,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.2
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
@@ -245,4 +245,15 @@ uViaDiameter=0.3
 uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=Power
+Clearance=0.4
+TrackWidth=0.4
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.4
+uViaDrill=0.2
+dPairWidth=0.4
+dPairGap=0.5
 dPairViaGap=0.25

@@ -498,7 +498,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/AP2127.pdf" H 10300 5550 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:DMP3013SFV Q1
+L Transistor_FET:AO3401A Q1
 U 1 1 60C00813
 P 8875 5000
 F 0 "Q1" H 9079 5046 50  0000 L CNN
@@ -1237,4 +1237,6 @@ Wire Wire Line
 	1550 1975 3525 1975
 Wire Wire Line
 	1900 2075 3525 2075
+Wire Wire Line
+	1600 2075 1500 2075
 $EndSCHEMATC
