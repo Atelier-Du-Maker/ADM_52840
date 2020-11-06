@@ -1432,7 +1432,7 @@ Wire Notes Line
 Wire Notes Line
 	3650 5000 7975 5000
 $Comp
-L seri:LOGO #G1
+L ADM_52840-rescue:LOGO-seri #G1
 U 1 1 5FA34F44
 P 8550 6825
 F 0 "#G1" H 8550 6606 60  0001 C CNN
@@ -1443,7 +1443,7 @@ F 3 "" H 8550 6825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L seri:LOGO #G2
+L ADM_52840-rescue:LOGO-seri #G2
 U 1 1 5FA358D5
 P 9600 6825
 F 0 "#G2" H 9600 6606 60  0001 C CNN
