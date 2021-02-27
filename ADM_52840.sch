@@ -186,7 +186,7 @@ U 1 1 5F9E4A6D
 P 9750 1475
 F 0 "U2" H 9150 1925 50  0000 L CNN
 F 1 "GD25Q16" H 9100 1850 50  0000 L CNN
-F 2 "LEGACY:SOIC8" H 9750 875 50  0000 C CNN
+F 2 "LEGACY:SOIC8" H 9750 875 50  0001 C CNN
 F 3 "" H 9750 1475 50  0001 C CNN
 	1    9750 1475
 	1    0    0    -1  
@@ -716,7 +716,7 @@ F 3 "" H 2025 7275 50  0001 C CNN
 $EndComp
 Text Notes 1050 7700 0    118  ~ 0
 SK6812
-Text GLabel 3300 2900 0    50   Input ~ 0
+Text GLabel 3600 2700 0    50   Input ~ 0
 SK_SIGNAL
 Text GLabel 1950 6800 2    50   Input ~ 0
 SK_SIGNAL
@@ -793,11 +793,11 @@ $EndComp
 Text GLabel 7075 5300 1    50   Input ~ 0
 VBAT
 Text GLabel 3500 1800 0    50   Input ~ 0
-P0.31
+BAT
 Wire Wire Line
 	7350 5750 7650 5750
 Text GLabel 7650 5750 2    50   Input ~ 0
-P0.31
+BAT
 Connection ~ 7350 5750
 Text Notes 6675 6425 0    118  ~ 0
 MONITOR BAT
@@ -1053,14 +1053,10 @@ Wire Wire Line
 	5525 3475 5525 3425
 Wire Wire Line
 	4950 3850 5525 3850
-Text GLabel 3400 2100 0    50   Input ~ 0
-P1.14
-Text GLabel 3400 2200 0    50   Input ~ 0
-P1.12
-Text GLabel 4675 5525 2    50   Input ~ 0
-P1.14
-Text GLabel 6150 5525 2    50   Input ~ 0
-P1.12
+Text GLabel 3600 2800 0    50   Input ~ 0
+BTN2
+Text GLabel 3600 2900 0    50   Input ~ 0
+BTN1
 $Comp
 L Device:R R10
 U 1 1 5FCBDF7D
@@ -1246,10 +1242,10 @@ Wire Notes Line
 Wire Notes Line
 	3650 5000 7975 5000
 $Comp
-L ADM_52840-rescue:LOGO-seri #G1
+L ADM_52840-rescue:LOGO-seri G1
 U 1 1 5FA34F44
 P 8550 6825
-F 0 "#G1" H 8550 6606 60  0001 C CNN
+F 0 "G1" H 8550 6606 60  0001 C CNN
 F 1 "LOGO" H 8550 7044 60  0001 C CNN
 F 2 "LEGACY:adm_lite" H 8550 6825 50  0001 C CNN
 F 3 "" H 8550 6825 50  0001 C CNN
@@ -1257,10 +1253,10 @@ F 3 "" H 8550 6825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ADM_52840-rescue:LOGO-seri #G2
+L ADM_52840-rescue:LOGO-seri G2
 U 1 1 5FA358D5
 P 9600 6825
-F 0 "#G2" H 9600 6606 60  0001 C CNN
+F 0 "G2" H 9600 6606 60  0001 C CNN
 F 1 "LOGO" H 9600 7044 60  0001 C CNN
 F 2 "LEGACY:adm" H 9600 6825 50  0001 C CNN
 F 3 "" H 9600 6825 50  0001 C CNN
@@ -1316,35 +1312,7 @@ Wire Wire Line
 Wire Wire Line
 	2725 900  3700 900 
 Wire Wire Line
-	3400 2100 3700 2100
-Wire Wire Line
-	3700 2200 3400 2200
-Wire Wire Line
-	3300 2900 3700 2900
-Wire Wire Line
-	3700 2800 2425 2800
-Wire Wire Line
-	2425 2800 2425 3750
-Wire Wire Line
-	3700 2700 2325 2700
-Wire Wire Line
-	2325 2700 2325 3750
-Wire Wire Line
-	3700 2600 2225 2600
-Wire Wire Line
-	2225 2600 2225 3750
-Wire Wire Line
-	3700 2500 2125 2500
-Wire Wire Line
-	2125 2500 2125 3750
-Wire Wire Line
-	3700 2400 2025 2400
-Wire Wire Line
-	2025 2400 2025 3750
-Wire Wire Line
-	3700 2300 1925 2300
-Wire Wire Line
-	1925 2300 1925 3750
+	3600 2900 3700 2900
 Wire Wire Line
 	3700 2000 1825 2000
 Wire Wire Line
@@ -1385,4 +1353,36 @@ Wire Wire Line
 	3700 1000 925  1000
 Wire Wire Line
 	925  1000 925  3750
+Wire Wire Line
+	3700 2700 3600 2700
+Wire Wire Line
+	3600 2800 3700 2800
+Wire Wire Line
+	3700 2100 1925 2100
+Wire Wire Line
+	1925 2100 1925 3750
+Wire Wire Line
+	3700 2200 2025 2200
+Wire Wire Line
+	2025 2200 2025 3750
+Wire Wire Line
+	3700 2300 2125 2300
+Wire Wire Line
+	2125 2300 2125 3750
+Wire Wire Line
+	3700 2400 2225 2400
+Wire Wire Line
+	2225 2400 2225 3750
+Wire Wire Line
+	3700 2500 2325 2500
+Wire Wire Line
+	2325 2500 2325 3750
+Wire Wire Line
+	3700 2600 2425 2600
+Wire Wire Line
+	2425 2600 2425 3750
+Text GLabel 6150 5525 2    50   Input ~ 0
+BTN2
+Text GLabel 4675 5525 2    50   Input ~ 0
+BTN1
 $EndSCHEMATC
