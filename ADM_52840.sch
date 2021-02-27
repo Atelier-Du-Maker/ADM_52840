@@ -130,7 +130,7 @@ L Switch:SW_Push SW3
 U 1 1 5F9E13C1
 P 4950 4100
 F 0 "SW3" H 4875 4025 50  0000 L CNN
-F 1 "RESET" H 4975 4200 50  0000 L CNN
+F 1 "RESET" H 4850 4300 50  0000 L CNN
 F 2 "LEGACY:SWITCH_CMS" H 4950 4300 50  0001 C CNN
 F 3 "~" H 4950 4300 50  0001 C CNN
 	1    4950 4100
@@ -186,7 +186,7 @@ U 1 1 5F9E4A6D
 P 9750 1475
 F 0 "U2" H 9150 1925 50  0000 L CNN
 F 1 "GD25Q16" H 9100 1850 50  0000 L CNN
-F 2 "LEGACY:SON80P400X300X60-10N" H 9750 875 50  0001 C CNN
+F 2 "LEGACY:SOIC8" H 9750 875 50  0000 C CNN
 F 3 "" H 9750 1475 50  0001 C CNN
 	1    9750 1475
 	1    0    0    -1  
@@ -298,11 +298,11 @@ Wire Wire Line
 	10300 1100 10300 1175
 Text GLabel 9150 1475 0    50   Input ~ 0
 QSPI_CS
-Text GLabel 6200 2300 2    50   Input ~ 0
+Text GLabel 6200 2500 2    50   Input ~ 0
 QSPI_0
-Text GLabel 6225 1900 2    50   Input ~ 0
-QSPI_2
 Text GLabel 4650 3500 3    50   Input ~ 0
+QSPI_2
+Text GLabel 4750 3500 3    50   Input ~ 0
 QSPI_3
 Text GLabel 4850 3500 3    50   Input ~ 0
 QSPI_CLK
@@ -712,9 +712,7 @@ F 3 "" H 1575 6850 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	1825 6950 2025 6950
-Wire Wire Line
-	2025 6950 2025 7125
-Text GLabel 1200 6800 1    50   Input ~ 0
+Text GLabel 1075 6625 2    50   Input ~ 0
 V_NRF
 $Comp
 L power:GND #PWR03
@@ -735,24 +733,9 @@ Text GLabel 1950 6800 2    50   Input ~ 0
 SK_SIGNAL
 Wire Wire Line
 	1950 6800 1825 6800
-$Comp
-L Connector:Conn_01x03_Male J2
-U 1 1 617280D9
-P 1025 7350
-F 0 "J2" V 950 7400 50  0000 R CNN
-F 1 "SK6812_OUT" V 950 7275 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1025 7350 50  0001 C CNN
-F 3 "~" H 1025 7350 50  0001 C CNN
-	1    1025 7350
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1375 6950 1025 6950
-Wire Wire Line
-	1025 6950 1025 7150
 Text GLabel 6200 2400 2    50   Input ~ 0
 QSPI_CS
-Text GLabel 4750 3500 3    50   Input ~ 0
+Text GLabel 6300 1900 2    50   Input ~ 0
 QSPI_1
 Connection ~ 7075 6175
 Wire Wire Line
@@ -867,22 +850,9 @@ Wire Wire Line
 Wire Wire Line
 	5850 2400 6200 2400
 Wire Wire Line
-	5850 2300 6200 2300
-Wire Wire Line
 	5850 2000 6550 2000
 Wire Wire Line
-	5850 1900 6225 1900
-Wire Wire Line
 	5850 800  6450 800 
-Wire Wire Line
-	925  6800 1375 6800
-Wire Wire Line
-	1125 7150 1125 7125
-Wire Wire Line
-	1125 7125 2025 7125
-Connection ~ 2025 7125
-Wire Wire Line
-	2025 7125 2025 7275
 $Comp
 L Connector:Conn_01x16_Male J3
 U 1 1 5FA23DAD
@@ -947,11 +917,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 2200 7075 2200
 Wire Wire Line
-	7150 2500 7150 2125
-Wire Wire Line
 	7150 2125 7625 2125
-Wire Wire Line
-	5850 2500 7150 2500
 Wire Wire Line
 	7250 2600 7250 2225
 Wire Wire Line
@@ -1231,17 +1197,17 @@ Wire Wire Line
 Wire Wire Line
 	4950 3850 5525 3850
 Text GLabel 3500 1900 0    50   Input ~ 0
-P0.32
+P0.04
 Text GLabel 3500 2000 0    50   Input ~ 0
-P0.33
+P0.05
 Wire Wire Line
 	3700 1900 3500 1900
 Wire Wire Line
 	3500 2000 3700 2000
 Text GLabel 4675 5525 2    50   Input ~ 0
-P0.32
+P0.04
 Text GLabel 6150 5525 2    50   Input ~ 0
-P0.33
+P0.05
 $Comp
 L Device:R R10
 U 1 1 5FCBDF7D
@@ -1373,12 +1339,7 @@ F 3 "~" H 800 6975 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	925  6800 925  7150
-Wire Wire Line
-	925  6800 800  6800
-Wire Wire Line
 	800  6800 800  6825
-Connection ~ 925  6800
 $Comp
 L power:GND #PWR0108
 U 1 1 5FE9A3F0
@@ -1469,4 +1430,24 @@ Wire Wire Line
 	5050 6725 5050 7025
 Wire Wire Line
 	4950 6725 4950 7025
+Wire Wire Line
+	5850 2300 7150 2300
+Wire Wire Line
+	7150 2300 7150 2125
+Wire Wire Line
+	5850 2500 6200 2500
+Wire Wire Line
+	5850 1900 6300 1900
+NoConn ~ 1375 6950
+Wire Wire Line
+	800  6800 950  6800
+Wire Wire Line
+	1075 6625 950  6625
+Wire Wire Line
+	950  6625 950  6800
+Connection ~ 950  6800
+Wire Wire Line
+	950  6800 1375 6800
+Wire Wire Line
+	2025 6950 2025 7275
 $EndSCHEMATC

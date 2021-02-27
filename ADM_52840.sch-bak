@@ -130,7 +130,7 @@ L Switch:SW_Push SW3
 U 1 1 5F9E13C1
 P 4950 4100
 F 0 "SW3" H 4875 4025 50  0000 L CNN
-F 1 "RESET" H 4975 4200 50  0000 L CNN
+F 1 "RESET" H 4850 4300 50  0000 L CNN
 F 2 "LEGACY:SWITCH_CMS" H 4950 4300 50  0001 C CNN
 F 3 "~" H 4950 4300 50  0001 C CNN
 	1    4950 4100
@@ -186,7 +186,7 @@ U 1 1 5F9E4A6D
 P 9750 1475
 F 0 "U2" H 9150 1925 50  0000 L CNN
 F 1 "GD25Q16" H 9100 1850 50  0000 L CNN
-F 2 "LEGACY:SON80P400X300X60-10N" H 9750 875 50  0001 C CNN
+F 2 "LEGACY:SOIC8" H 9750 875 50  0000 C CNN
 F 3 "" H 9750 1475 50  0001 C CNN
 	1    9750 1475
 	1    0    0    -1  
@@ -298,11 +298,11 @@ Wire Wire Line
 	10300 1100 10300 1175
 Text GLabel 9150 1475 0    50   Input ~ 0
 QSPI_CS
-Text GLabel 6200 2300 2    50   Input ~ 0
+Text GLabel 6200 2500 2    50   Input ~ 0
 QSPI_0
-Text GLabel 6225 1900 2    50   Input ~ 0
-QSPI_2
 Text GLabel 4650 3500 3    50   Input ~ 0
+QSPI_2
+Text GLabel 4750 3500 3    50   Input ~ 0
 QSPI_3
 Text GLabel 4850 3500 3    50   Input ~ 0
 QSPI_CLK
@@ -752,7 +752,7 @@ Wire Wire Line
 	1025 6950 1025 7150
 Text GLabel 6200 2400 2    50   Input ~ 0
 QSPI_CS
-Text GLabel 4750 3500 3    50   Input ~ 0
+Text GLabel 6300 1900 2    50   Input ~ 0
 QSPI_1
 Connection ~ 7075 6175
 Wire Wire Line
@@ -867,11 +867,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 2400 6200 2400
 Wire Wire Line
-	5850 2300 6200 2300
-Wire Wire Line
 	5850 2000 6550 2000
-Wire Wire Line
-	5850 1900 6225 1900
 Wire Wire Line
 	5850 800  6450 800 
 Wire Wire Line
@@ -947,11 +943,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 2200 7075 2200
 Wire Wire Line
-	7150 2500 7150 2125
-Wire Wire Line
 	7150 2125 7625 2125
-Wire Wire Line
-	5850 2500 7150 2500
 Wire Wire Line
 	7250 2600 7250 2225
 Wire Wire Line
@@ -1231,17 +1223,17 @@ Wire Wire Line
 Wire Wire Line
 	4950 3850 5525 3850
 Text GLabel 3500 1900 0    50   Input ~ 0
-P0.32
+P0.04
 Text GLabel 3500 2000 0    50   Input ~ 0
-P0.33
+P0.05
 Wire Wire Line
 	3700 1900 3500 1900
 Wire Wire Line
 	3500 2000 3700 2000
 Text GLabel 4675 5525 2    50   Input ~ 0
-P0.32
+P0.04
 Text GLabel 6150 5525 2    50   Input ~ 0
-P0.33
+P0.05
 $Comp
 L Device:R R10
 U 1 1 5FCBDF7D
@@ -1432,7 +1424,7 @@ Wire Notes Line
 Wire Notes Line
 	3650 5000 7975 5000
 $Comp
-L seri:LOGO #G1
+L ADM_52840-rescue:LOGO-seri #G1
 U 1 1 5FA34F44
 P 8550 6825
 F 0 "#G1" H 8550 6606 60  0001 C CNN
@@ -1443,7 +1435,7 @@ F 3 "" H 8550 6825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L seri:LOGO #G2
+L ADM_52840-rescue:LOGO-seri #G2
 U 1 1 5FA358D5
 P 9600 6825
 F 0 "#G2" H 9600 6606 60  0001 C CNN
@@ -1469,4 +1461,12 @@ Wire Wire Line
 	5050 6725 5050 7025
 Wire Wire Line
 	4950 6725 4950 7025
+Wire Wire Line
+	5850 2300 7150 2300
+Wire Wire Line
+	7150 2300 7150 2125
+Wire Wire Line
+	5850 2500 6200 2500
+Wire Wire Line
+	5850 1900 6300 1900
 $EndSCHEMATC
