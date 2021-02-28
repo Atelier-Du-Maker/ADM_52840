@@ -792,7 +792,7 @@ F 3 "~" H 7075 5950 50  0001 C CNN
 $EndComp
 Text GLabel 7075 5300 1    50   Input ~ 0
 VBAT
-Text GLabel 3500 1800 0    50   Input ~ 0
+Text GLabel 3575 2000 0    50   Input ~ 0
 BAT
 Wire Wire Line
 	7350 5750 7650 5750
@@ -977,8 +977,6 @@ F 3 "~" H 1425 775 50  0001 C CNN
 	1    1425 775 
 	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	3700 1800 3500 1800
 Wire Wire Line
 	7550 2900 7550 2525
 Wire Wire Line
@@ -1314,14 +1312,6 @@ Wire Wire Line
 Wire Wire Line
 	3600 2900 3700 2900
 Wire Wire Line
-	3700 2000 1825 2000
-Wire Wire Line
-	1825 2000 1825 3750
-Wire Wire Line
-	3700 1900 1725 1900
-Wire Wire Line
-	1725 1900 1725 3750
-Wire Wire Line
 	3700 1700 1625 1700
 Wire Wire Line
 	1625 1700 1625 3750
@@ -1385,4 +1375,14 @@ Text GLabel 6150 5525 2    50   Input ~ 0
 BTN2
 Text GLabel 4675 5525 2    50   Input ~ 0
 BTN1
+Wire Wire Line
+	3575 2000 3700 2000
+Wire Wire Line
+	3700 1800 1725 1800
+Wire Wire Line
+	1725 1800 1725 3750
+Wire Wire Line
+	3700 1900 1825 1900
+Wire Wire Line
+	1825 1900 1825 3750
 $EndSCHEMATC
